@@ -1,3 +1,4 @@
+@import "https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8";
 html, body {
   margin: 0;
   padding: 0;
@@ -369,4 +370,59 @@ header .wr > .content > .btn:hover {
   line-height: 1.7;
   max-width: 430px;
   margin: 25px auto 0 auto;
+}
+
+footer {
+  padding: 100px 0;
+  background: #26282b;
+}
+
+footer > .wr {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer > .wr > .col {
+  min-height: 100px;
+  border-right: 1px solid #727272;
+  padding: 0 35px;
+}
+
+footer > .wr > .col.grow {
+  flex: 1;
+}
+
+footer > .wr > .col:first-child {
+  padding-left: 0;
+}
+
+footer > .wr > .col:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+
+footer > .wr > .col h3 {
+  text-transform: uppercase;
+  color: #727272;
+}
+
+footer > .wr > .col > .social {
+  display: inline-flex;
+  width: 35px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  background: #323232;
+  border-radius: 0 10px;
+  text-decoration: none;
+  color: white;
+  margin-right: 5px;
+}
+
+footer > .wr > .col > .social:hover {
+  background: #3f3f3f;
 }
