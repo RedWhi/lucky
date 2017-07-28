@@ -95,6 +95,11 @@ header {
 	align-items: center;
 	color: white;
 
+	@media (max-width:746px) {
+	display: block;
+	text-align: center;
+	}
+
 	&>.btn{
 	display: inline-block;
 	border-radius: 30px;
@@ -102,6 +107,11 @@ header {
 	padding: 7px 50px;
 	text-decoration: none;
 	color:white;
+	@media (max-width:746px) {
+	display: block;
+	margin-top: 15px;
+	}
+
 	&:hover{
 	background-color: lighten(red, 5%);
 	}
@@ -130,6 +140,7 @@ header {
 }
 &>.items{
 	margin-top: 65px;
+	position:relative;
 
 	&>.row {
 	display:flex;
@@ -140,6 +151,7 @@ header {
 	&:nth-child(even) {
 	flex-direction: row-reverse;
 	}
+	
 	
 	 &>.col{
 	 flex:1;
@@ -155,6 +167,33 @@ header {
 	 	font-size: 13px;
 	 	line-height: 1.7;
 	 	}
+	 }
+	}
+	&>.red-dot{
+	position: absolute;
+	width: 1px; height:100%;
+	left: 50%;
+	top: 0px;
+	background:gray;
+		
+	 &>.cont{
+	 position: absolute;
+	 width: 33px; 
+	 height: 33px;
+	 left: -17px;
+	 top: -5px;
+	 border-radius: 50%;
+	 border: 1px solid gray;
+	 background: white;
+	 }
+	 &>.dot{
+	 position: sticky;
+	 width: 25px;
+	 height: 25px;
+	 margin-left: -12px;
+	 top: 145px;
+	 background: red;
+	 border-radius: 50%;
 	 }
 	}
 }
@@ -178,11 +217,18 @@ header {
 	justify-content: space-between;
 	align-items: center;
 
+	@media (max-width:768px) {
+	display: block;
+	
+	}
+
 	&>.col {
 
 	&.col-1 {
 	 flex-basis: 65%;
 	 margin-right: 30px;
+	  @media (max-width:746px) {
+	margin-bottom: 35px;	}
 
 	 &>.row-1{
 	 h2{
@@ -214,6 +260,7 @@ header {
 	 top: 10px;
 	 height: 1px;
 	 background: gray;
+	
 
 	   span{
 	   display: flex;
@@ -316,6 +363,7 @@ header {
 	 flex:1;
 	 padding: 0 30px;
 	 text-allign: center;
+	 margin-bottom: 50px;
 
 	  &>.for-photo{
 	  position: relative;
@@ -337,6 +385,8 @@ header {
 	   width: 194px;
 	   height: 191px;
 	   transition: all 0.3s ease;
+	   border: 1px solid white;
+	   border-radius: 36%;
 	   
 	   }
 	   &>.photo {
@@ -380,11 +430,18 @@ footer {
 		box-sizing: border-box;
 		display: flex;
 		justify-content: space-between;
+		align-items: flex-start;
+
+		 @media (max-width:768px) {
+			display: block;	}
 
 		&>.col{
 			min-height:100px;
 			border-right: 1px solid #727272;
 			padding:0 35px;
+
+			 @media (max-width:746px) {
+				border: 0;	}
 			&.grow{
 				flex: 1;
 			}
@@ -414,6 +471,37 @@ footer {
 				&:hover	{
 					background: lighten(#323232, 5%);
 				}
+			}
+			input[type='text']{
+				 outline: none;
+				 background-color: #323232;
+				 border-radius: 5px;
+				 border:0;
+				 padding: 10px 15px;
+				 box-shadow: inset 4.2px -2.7px 5px rgba(0, 1, 1, 0.2);
+				 max-width: 320px;
+				 box-sizing: border-box;
+			}
+			&.col-3{
+			flex: 1;
+			  &>.row {
+			    display: flex;
+			    justify-content: space-between;
+
+			    &>.col{
+			      a{
+			      color:#9d484c;
+			        &:hover {
+			        color: lighten(#9d484c, 10%);
+			        }
+
+			      }
+
+			    }
+			  }
+			  &>.copy{
+			        margin-top: 50px;
+			        }
 			}
 
 		}

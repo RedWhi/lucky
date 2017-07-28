@@ -3,7 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
-	<link rel="stylesheet" href="css/style.css">
+	
+	<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -36,14 +39,14 @@
 	</div>
 </section>
 
-<section id="platform">
+<section id="platform" data-js-animation="bounceInUp">
 	<div class="wr">
 		<h2>The platform</h2>
 		<h3>Lorem ipsum dolor sit amet</h3>
 
 		<div class="items">
 			<div class="row">
-				<div class="col"> <img src="img/N1.jpg" > </div>
+				<div class="col" data-js-animation="bounceInLeft"> <img src="img/N1.jpg" > </div>
 				<div class="col">
 					<h4>Lorem ipsum dolor sit amet, consectetur</h4>
 					<div class="text">
@@ -53,7 +56,7 @@
 			</div>
 			
 			<div class="row">
-				<div class="col"> <img src="img/N2.jpg" > </div>
+				<div class="col" data-js-animation="bounceInRight"> <img src="img/N2.jpg" > </div>
 				<div class="col">
 					<h4>Lorem ipsum dolor sit amet, consectetur</h4>
 					<div class="text">
@@ -63,7 +66,7 @@
 			</div>
 
 			<div class="row">
-				<div class="col"> <img src="img/N3.jpg" > </div>
+				<div class="col" data-js-animation="bounceInLeft"> <img src="img/N3.jpg" > </div>
 				<div class="col">
 					<h4>Lorem ipsum dolor sit amet, consectetur</h4>
 					<div class="text">
@@ -72,12 +75,18 @@
 				</div>
 			</div>
 
+			<div class="red-dot">
+				<div class="cont"></div>
+				<div class="cont" style="top:375px;"></div>
+				<div class="cont"></div>
+				<div class="dot"></div>
+			</div>
 		</div>
 	</div>
 </section>
 
 
-<section id="product">
+<section id="product" data-js-animation="bounceInUp">
 	<div class="wr">
 		<div class="col col-1">
 			<div class="row-1">
@@ -104,7 +113,7 @@
 	</div>
 </section>
 
-<section id="team">
+<section id="team" data-js-animation="bounceInUp">
 	<div class="wr">
 		<div class="for-title">
 			<h2>Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
@@ -114,8 +123,8 @@
 		</div>
 		<div class="team-list">
 			<div class="col">
-				<div class="for-photo">
-					<div class="bd" style="background-image: url(img/avatar-wr.jpg)" ></div>
+				<div class="for-photo" data-js-animation="bounceInLeft">
+					<div class="bd"  style="background-image: url(img/avatar-wr.jpg)" ></div>
 					<div class="photo" style="background-image: url(img/girl1.jpg)"></div>
 				</div>
 				<div class="nick">Lorem ipsum.</div>
@@ -123,7 +132,7 @@
 				<div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque voluptatem asperiores, explicabo quaerat?</div>
 			</div>
 			<div class="col">
-				<div class="for-photo">
+				<div class="for-photo" data-js-animation="bounceInRight">
 					<div class="bd" style="background-image: url(img/avatar-wr.jpg)" ></div>
 					<div class="photo" style="background-image: url(img/girl2.jpg)"></div>
 				</div>
@@ -135,7 +144,7 @@
 	</div>
 </section>
 
-<footer>
+<footer >
 	<div class="wr">
 		<div class="col col-1">
 			<h3>lorem</h3>
@@ -157,8 +166,8 @@
 					sit amet.
 				</div>
 				<div class="col">
-					text to text
-					<a href="#"></a>
+					1040 1000 1000 <br>
+					<a href="#">mymail.info@gmail.com</a>
 				</div>
 			</div>
 			<div class="copy">@2017. All rights reserved</div>
@@ -166,7 +175,11 @@
 	</div>
 </footer>
 
-<script src=""></script>	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/is-in-viewport/3.0.0/isInViewport.min.js"></script>
+
+<script src="script.js"></script>	
 </body>
 </html>
 
